@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Data & Design</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Portfolio</span>
+      </div>
+      <nav class="topnav">
+        <a class="topnav-link" href="mailto:alexandrapadonou0@gmail.com">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>
+          <span>Contact</span>
+        </a>
+        <a class="topnav-link" href="https://github.com/alexandrapadonou" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.05-.02-2.06-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.96 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.23 0 4.63-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22 0 1.6-.02 2.89-.02 3.28 0 .32.22.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5z"/></svg>
+          <span>GitHub</span>
+        </a>
+        <a class="topnav-link" href="https://www.linkedin.com/in/alexandra-padonou" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8h4V23h-4V8zM8 8h3.83v2.05h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.14V23h-4v-6.85c0-1.63-.03-3.74-2.28-3.74-2.28 0-2.63 1.78-2.63 3.62V23H8V8z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+      </nav>
+    </header>
+
+    <main id="scroll-root">
+      <!-- ===== HAUT : Design & développement front ===== -->
+      <section id="designer" class="panel panel-projects theme-orange">
+        <div class="section-inner">
+          <div class="section-head section-head-center">
+            <h2>Projets Design &amp; Front-end</h2>
+            <p class="section-sub">
+              Des interfaces pensées pour l'utilisateur, de la maquette à
+              l'intégration. Chaque projet cherche clarté et cohérence.
+            </p>
+          </div>
+
+          <div class="filters" data-filter-group>
+            <button class="filter active" data-cat="all">Tous</button>
+            <button class="filter" data-cat="dev">Dev</button>
+            <button class="filter" data-cat="design">Design</button>
+          </div>
+
+          <div class="cards">
+            <article class="pcard" data-cat="design dev">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                </span>
+                <h3>Site web BOOM</h3>
+              </div>
+              <p>
+                Design UI/UX et développement front-end du site web de
+                BOOM, réalisé chez Aubépine.
+              </p>
+              <div class="ptags">
+                <span class="tag-rose">Figma</span><span class="tag-violet">WordPress</span>
+              </div>
+              <div class="pcard-foot">
+                <a class="card-link" href="https://www.boom.coop/" target="_blank" rel="noopener noreferrer">Voir le site <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="design dev">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2.5"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+                </span>
+                <h3>Application BOOM</h3>
+              </div>
+              <p>
+                Chez Aubépine : maquette de l'application mobile sous Figma et
+                développement front-end de l'application web BOOM.
+              </p>
+              <div class="ptags">
+                <span class="tag-rose">Figma</span><span class="tag-jaune">Front-end</span><span class="tag-gris">SQL</span>
+              </div>
+              <div class="pcard-foot">
+                <span class="card-note">Confidentiel</span>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="design dev">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><polyline points="9 16 11 18 15 14"/></svg>
+                </span>
+                <h3>Site web Pôle de l'arbre</h3>
+              </div>
+              <p>
+                Développement front-end sous WordPress et mise en place d'un
+                système de réservation automatique pour les espaces de coworking
+                et salles de réunion.
+              </p>
+              <div class="ptags">
+                <span class="tag-violet">WordPress</span><span class="tag-jaune">Front-end</span><span class="tag-rose">Figma</span>
+              </div>
+              <div class="pcard-foot">
+                <a class="card-link" href="https://poledelarbre.coop/location-d-espaces-de-coworking/" target="_blank" rel="noopener noreferrer">Voir le site <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="design">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                </span>
+                <h3>Olasoft - Conception de maquettes</h3>
+              </div>
+              <p>
+                Conception de maquettes dynamiques pour les
+                clients de l'entreprise, dans le respect du cahier des charges
+                et des délais.
+              </p>
+              <div class="ptags">
+                <span class="tag-noir">Adobe XD</span><span class="tag-jaune">Illustrator</span><span class="tag-gris">Photoshop</span>
+              </div>
+              <div class="pcard-foot">
+                <span class="card-note">Confidentiel</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== CENTRE : Accueil ===== -->
+      <section id="intro" class="panel panel-hero">
+        <div class="hero">
+          <div class="hero-text">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Alexandra Padonou</p>
+            <h1>Mon parcours entre<br /><span class="grad">Data Science et<br /><span class="nowrap">Front-end/Design</span></span></h1>
+            <span class="hero-underline"></span>
+            <p class="hero-sub">
+              Avec de l'expérience en analyse, modèles IA, BI et développement
+              front-end. Je transforme des données en
+              solutions concrètes : <strong> API, modèles, tableaux de
+              bord, et applications.</strong>
+            </p>
+
+            <div class="actions">
+              <button class="btn-primary" data-target="data">
+                <span class="btn-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="6 13 12 19 18 13"/></svg>
+                </span>
+                Data Science & IA
+              </button>
+              <button class="btn-ghost" data-target="designer">
+                <span class="btn-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="6 11 12 5 18 11"/></svg>
+                </span>
+                Front-end & Design
+              </button>
+            </div>
+
+            <div class="features">
+              <div class="feature">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="13"/><line x1="10" y1="20" x2="10" y2="8"/><line x1="16" y1="20" x2="16" y2="4"/></svg>
+                Data Science
+              </div>
+              <span class="feature-sep"></span>
+              <div class="feature">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                Développement
+              </div>
+              <span class="feature-sep"></span>
+              <div class="feature">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="10.5" r="1.5"/><circle cx="8.5" cy="7.5" r="1.5"/><circle cx="6.5" cy="12.5" r="1.5"/><path d="M12 2C6.5 2 2 6 2 11c0 4 3 7 7 7 1.5 0 2-1 2-2s-1-1.5-1-2.5 1-1.5 2-1.5h2c3 0 5-2 5-5 0-3.5-3.5-6-7-6z"/></svg>
+                Design UX/UI
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img src="assets/profile-split.png" alt="Portrait artistique et technologique" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== BAS : Data Science & IA ===== -->
+      <section id="data" class="panel panel-projects theme-violet">
+        <div class="section-inner">
+          <div class="section-head section-head-center">
+            <h2>Projets Data &amp; IA</h2>
+            <p class="section-sub">
+              Du POC au déploiement : machine learning, vision par ordinateur,
+              BI et data engineering au service de la décision.
+            </p>
+          </div>
+
+          <div class="filters" data-filter-group>
+            <button class="filter active" data-cat="all">Tous</button>
+            <button class="filter" data-cat="ml">Machine Learning</button>
+            <button class="filter" data-cat="cv">Vision par ordinateur</button>
+            <button class="filter" data-cat="nlp">NLP</button>
+            <button class="filter" data-cat="bi">BI &amp; DataViz</button>
+            <button class="filter" data-cat="analyse">Analyse de données</button>
+          </div>
+
+          <div class="cards">
+            <article class="pcard" data-cat="ml cv">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 15l4-4 4 4 6-6"/></svg>
+                </span>
+                <div>
+                  <h3>Segmentation &amp; détection d'objets</h3>
+                  <span class="pcard-org">Aubépine · LETG</span>
+                </div>
+              </div>
+              <p>
+                Entraînement de modèles de segmentation d'images, détection
+                d'objets et estimation de profondeur, sur un pipeline de données
+                fiabilisé.
+              </p>
+              <div class="ptags">
+                <span class="tag-jaune">Python</span><span class="tag-rose">TensorFlow</span><span class="tag-violet">Computer Vision</span>
+              </div>
+              <div class="pcard-foot">
+                <span class="card-note">Confidentiel</span>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="bi">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="20" x2="4" y2="13"/><line x1="10" y1="20" x2="10" y2="8"/><line x1="16" y1="20" x2="16" y2="4"/></svg>
+                </span>
+                <div>
+                  <h3>Plateforme décisionnelle &amp; DataViz</h3>
+                  <span class="pcard-org">Sopra Steria · Orange</span>
+                </div>
+              </div>
+              <p>
+                Migration et administration d'une plateforme de business
+                intelligence : refonte d'univers et de rapports pour fiabiliser
+                le pilotage.
+              </p>
+              <div class="ptags">
+                <span class="tag-gris">SAP BO</span><span class="tag-rose">DataViz</span><span class="tag-gris">SQL</span>
+              </div>
+              <div class="pcard-foot">
+                <span class="card-note">Confidentiel</span>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="nlp">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </span>
+                <div>
+                  <h3>Expérimentation LLM &amp; collecte de données</h3>
+                  <span class="pcard-org">IRISA-INRIA</span>
+                </div>
+              </div>
+              <p>
+                Déploiement local d'un grand modèle de langage et collecte de
+                données via API et SPARQL. Travaux ayant donné lieu à une
+                publication scientifique.
+              </p>
+              <div class="ptags">
+                <span class="tag-violet">LLM</span><span class="tag-jaune">Python</span><span class="tag-gris">API · SPARQL</span>
+              </div>
+              <div class="pcard-foot">
+                <a class="card-link" href="https://inria.hal.science/hal-04602983v1/document" target="_blank" rel="noopener noreferrer">Publication EGC 2024 <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="analyse bi">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                </span>
+                <div>
+                  <h3>Analyse territoriale &amp; cartographie</h3>
+                  <span class="pcard-org">BDI</span>
+                </div>
+              </div>
+              <p>
+                Nettoyage, ACP et clustering de données économiques, restitués
+                via dashboards et cartographies pour appuyer la décision
+                publique.
+              </p>
+              <div class="ptags">
+                <span class="tag-jaune">Python</span><span class="tag-violet">Clustering</span><span class="tag-rose">Cartographie</span>
+              </div>
+              <div class="pcard-foot">
+                <span class="card-note">Confidentiel</span>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="analyse">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                </span>
+                <div>
+                  <h3>Données santé publique</h3>
+                  <span class="pcard-org">Open Food Facts · OCR</span>
+                </div>
+              </div>
+              <p>
+                Nettoyage, analyse exploratoire et multivariée des données Open
+                Food Facts pour appuyer un organisme de santé publique, dans le
+                respect du RGPD.
+              </p>
+              <div class="ptags">
+                <span class="tag-jaune">Python</span><span class="tag-violet">Scikit-learn</span><span class="tag-gris">Pandas</span>
+              </div>
+              <div class="pcard-foot">
+                <a class="card-link" href="https://github.com/alexandrapadonou/Prepare-Data-for-a-Public-Health-Organization" target="_blank" rel="noopener noreferrer">Voir le projet<span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="ml analyse">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </span>
+                <div>
+                  <h3>Prédiction énergie &amp; émissions CO₂</h3>
+                  <span class="pcard-org">Seattle · OCR</span>
+                </div>
+              </div>
+              <p>
+                Modélisation pour prédire la consommation énergétique et les
+                émissions de GES des bâtiments non résidentiels de Seattle à
+                partir de leurs caractéristiques, avec interprétabilité SHAP/LIME.
+              </p>
+              <div class="ptags">
+                <span class="tag-jaune">Python</span><span class="tag-violet">Scikit-learn</span><span class="tag-gris">SHAP · LIME</span>
+              </div>
+              <div class="pcard-foot">
+                <a class="card-link" href="https://github.com/alexandrapadonou/Anticipez-les-besoins-en-consommation-de-b-timents" target="_blank" rel="noopener noreferrer">Voir le projet<span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="nlp ml">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+                </span>
+                <div>
+                  <h3>Prédiction des tags à partir d'une question</h3>
+                  <span class="pcard-org">StackOverflow · OCR</span>
+                </div>
+              </div>
+              <p>
+                Mise en production d'un modèle NLP multi-label pour suggérer des
+                tags StackOverflow : API REST FastAPI, suivi et versionnement des
+                modèles avec MLflow, tests automatisés et déploiement cloud
+                (CI/CD).
+              </p>
+              <div class="ptags">
+                <span class="tag-jaune">Python</span><span class="tag-rose">NLP</span><span class="tag-violet">FastAPI</span><span class="tag-violet">MLflow</span><span class="tag-gris">MLOps</span><span class="tag-gris">SQL</span><span class="tag-rose">Streamlit</span>
+              </div>
+              <div class="pcard-foot">
+                <a class="card-link" href="https://github.com/alexandrapadonou/tagStackoverflow" target="_blank" rel="noopener noreferrer">Voir le projet<span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="cv ml">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                </span>
+                <div>
+                  <h3>Classification de races de chiens</h3>
+                  <span class="pcard-org">Openclassrooms</span>
+                </div>
+              </div>
+              <p>
+                Comparaison de modèles de deep learning (ResNet50, ConvNeXt) pour
+                reconnaître la race d'un chien, avec un dashboard interactif de
+                prédiction.
+              </p>
+              <div class="ptags">
+                <span class="tag-jaune">Python</span><span class="tag-rose">TensorFlow</span><span class="tag-violet">Computer Vision</span><span class="tag-gris">Streamlit</span>
+              </div>
+              <div class="pcard-foot">
+                <a class="card-link" href="https://github.com/alexandrapadonou/ClassificationDogs" target="_blank" rel="noopener noreferrer">Voir le projet<span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+
+            <article class="pcard" data-cat="cv bi">
+              <div class="pcard-head">
+                <span class="pcard-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                </span>
+                <div>
+                  <h3>Dashboard Streamlit de classification d'images</h3>
+                  <span class="pcard-org">Openclassrooms</span>
+                </div>
+              </div>
+              <p>
+                Mise en place d'un dashboard Streamlit interactif : analyse des
+                données, comparaison des performances ResNet50 vs ConvNeXt, et
+                prédiction de races de chiens en direct.
+              </p>
+              <div class="ptags">
+                <span class="tag-jaune">Python</span><span class="tag-rose">DataViz</span><span class="tag-violet">Computer Vision</span><span class="tag-gris">Streamlit</span>
+              </div>
+              <div class="pcard-foot">
+                <a class="card-link" href="https://github.com/alexandrapadonou/convNext-Streamlit-Dashboard" target="_blank" rel="noopener noreferrer">Voir le dashboard<span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
