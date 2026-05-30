@@ -653,6 +653,11 @@ button:hover {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 880px) {
+  /* Navigation horizontale : flèches haut/bas -> gauche/droite */
+  .btn-icon svg {
+    transform: rotate(-90deg);
+  }
+
   .hero {
     grid-template-columns: 1fr;
     text-align: left;
