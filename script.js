@@ -48,6 +48,56 @@ root.addEventListener(
   { passive: false }
 );
 
+// Sur mobile : un swipe vertical (haut/bas) change aussi de section
+let touchStartX = 0;
+let touchStartY = 0;
+
+root.addEventListener(
+  "touchstart",
+  (event) => {
+    const touch = event.touches[0];
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+  },
+  { passive: true }
+);
+
+root.addEventListener(
+  "touchend",
+  (event) => {
+    const touch = event.changedTouches[0];
+    const deltaX = touch.clientX - touchStartX;
+    const deltaY = touch.clientY - touchStartY;
+
+    // On ne réagit qu'aux swipes verticaux nets (l'horizontal est natif)
+    if (Math.abs(deltaY) <= Math.abs(deltaX) || Math.abs(deltaY) < 50) return;
+
+    const panel = panels[currentIndex()];
+
+    // Laisse défiler verticalement à l'intérieur d'une section trop haute
+    if (panel && panel.scrollHeight > panel.clientHeight + 1) {
+      const atTop = panel.scrollTop <= 0;
+      const atBottom =
+        panel.scrollTop + panel.clientHeight >= panel.scrollHeight - 1;
+      if (deltaY < 0 && !atBottom) return;
+      if (deltaY > 0 && !atTop) return;
+    }
+
+    if (isAnimating) return;
+
+    const direction = deltaY < 0 ? 1 : -1;
+    const next = currentIndex() + direction;
+    if (next < 0 || next > panels.length - 1) return;
+
+    isAnimating = true;
+    goTo(next);
+    setTimeout(() => {
+      isAnimating = false;
+    }, 700);
+  },
+  { passive: true }
+);
+
 // Navigation clavier (flèches)
 window.addEventListener("keydown", (event) => {
   if (event.key === "ArrowDown" || event.key === "ArrowRight") {
